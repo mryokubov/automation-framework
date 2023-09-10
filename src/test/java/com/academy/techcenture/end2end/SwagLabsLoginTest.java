@@ -53,7 +53,7 @@ public class SwagLabsLoginTest extends BaseTest {
 
     @Test
     public void testSomething(){
-        System.out.println("testing some features");
-        System.out.println("test is done");
+        System.out.println("This is a correct line of code");
+        System.out.println("This is another correct line of code");
     }
 }
