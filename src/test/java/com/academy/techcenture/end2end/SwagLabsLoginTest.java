@@ -50,4 +50,10 @@ public class SwagLabsLoginTest extends BaseTest {
         loginPage.verifyLoginError();
         extentTest.log(LogStatus.PASS, "User was able to see error messages on the login page");
     }
+
+    @Test
+    public void testSomething(){
+        System.out.println("testing some features");
+        System.out.println("test is done");
+    }
 }
