@@ -25,9 +25,9 @@ jobs:
       - run:
           name: Creating Dummy Artifacts
           command: |
-            echo "$(pwd)/target" > /tmp/art-1;
+            echo "$(pwd)/test-report/ExtentReport.html" > /tmp/art-1;
             mkdir /tmp/artifacts;
-            echo "$(pwd)/target" > /tmp/artifacts/art-2;
+            echo "$(pwd)/test-report/ExtentReport.html" > /tmp/artifacts/art-2;
 
       # Download and cache dependencies
       - restore_cache:

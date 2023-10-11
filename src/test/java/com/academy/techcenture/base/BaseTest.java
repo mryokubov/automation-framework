@@ -22,8 +22,8 @@ import java.util.Date;
 public abstract class BaseTest {
 
     protected static WebDriver driver;
-    protected ExtentReports reports;
-    protected  ExtentTest extentTest;
+    protected static ExtentReports reports;
+    protected static ExtentTest extentTest;
 
     @BeforeTest
     public void beforeTest(){
