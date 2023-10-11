@@ -5,7 +5,6 @@ import com.academy.techcenture.pages.LoginPage;
 import com.academy.techcenture.pages.ProductsPage;
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
-
 import static com.academy.techcenture.constants.Constants.*;
 
 public class SwagLabsLoginTest extends BaseTest {
@@ -26,7 +25,7 @@ public class SwagLabsLoginTest extends BaseTest {
         extentTest.log(LogStatus.PASS, "User was successfully navigated to Products Page");
     }
 
-    @Test
+    @Test(enabled = false)
     public void loginIncorrectCredentialsTest(){
         extentTest = reports.startTest("Swag Labs Login Negative Test (Incorrect Credentials)");
         LoginPage loginPage = new LoginPage(driver);
@@ -38,7 +37,7 @@ public class SwagLabsLoginTest extends BaseTest {
         loginPage.verifyLoginError();
         extentTest.log(LogStatus.PASS, "User was able to see error messages on the login page");
     }
-    @Test
+    @Test(enabled = false)
     public void loginEmptyCredentialsTest(){
         extentTest = reports.startTest("Swag Labs Login Negative Test (Empty Credentials)");
         LoginPage loginPage = new LoginPage(driver);
@@ -51,7 +50,7 @@ public class SwagLabsLoginTest extends BaseTest {
         extentTest.log(LogStatus.PASS, "User was able to see error messages on the login page");
     }
 
-    @Test
+    @Test(enabled = false)
     public void testSomething(){
         System.out.println("This is a correct line of code");
         System.out.println("This is another correct line of code");

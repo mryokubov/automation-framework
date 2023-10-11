@@ -12,6 +12,7 @@ public class SwagLabsResetAppStateTest extends BaseTest {
 
     @Test
     public void resetAppStateTest() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs Reset App State Test");
 
         LoginPage loginPage = new LoginPage(driver);
         ProductsPage productsPage = new ProductsPage(driver);

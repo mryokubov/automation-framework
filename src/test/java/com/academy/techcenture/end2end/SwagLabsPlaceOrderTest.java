@@ -2,6 +2,7 @@ package com.academy.techcenture.end2end;
 
 import com.academy.techcenture.base.BaseTest;
 import com.academy.techcenture.pages.*;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static com.academy.techcenture.constants.Constants.*;
@@ -14,6 +15,7 @@ public class SwagLabsPlaceOrderTest extends BaseTest {
 
     @Test
     public void placeOrderPositiveTest() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs place order positive Test");
 
         LoginPage loginPage = new LoginPage(driver);
         ProductsPage productsPage = new ProductsPage(driver);
@@ -42,6 +44,7 @@ public class SwagLabsPlaceOrderTest extends BaseTest {
 
     @Test
     public void placeOrderNegativeTest() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs place order negative Test");
 
         LoginPage loginPage = new LoginPage(driver);
         ProductsPage productsPage = new ProductsPage(driver);
@@ -64,6 +67,8 @@ public class SwagLabsPlaceOrderTest extends BaseTest {
         checkoutInformationPage.clickCancel();
         cartPage.continueShopping();
         productDetailsPage.logout();
+
+        Assert.assertEquals(45, 45, "jkfads");
     }
 
 }

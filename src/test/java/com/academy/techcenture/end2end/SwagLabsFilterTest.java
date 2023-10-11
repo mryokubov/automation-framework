@@ -10,6 +10,8 @@ public class SwagLabsFilterTest extends BaseTest {
 
     @Test
     public void filterAtoZ() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs filter A to Z Test");
+
         String[] filteredItems = {"Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt",
                 "Sauce Labs Fleece Jacket", "Sauce Labs Onesie", "Test.allTheThings() T-Shirt (Red)"};
 
@@ -26,6 +28,8 @@ public class SwagLabsFilterTest extends BaseTest {
 
     @Test
     public void filterZtoA() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs filter Z to A Test");
+
         String[] filteredItems = {"Test.allTheThings() T-Shirt (Red)", "Sauce Labs Onesie", "Sauce Labs Fleece Jacket",
                 "Sauce Labs Bolt T-Shirt", "Sauce Labs Bike Light",  "Sauce Labs Backpack"};
 
@@ -42,6 +46,8 @@ public class SwagLabsFilterTest extends BaseTest {
 
     @Test
     public void filterLowtoHigh() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs filter Low to High Test");
+
         String[] filteredItems = {"Sauce Labs Onesie", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt",
                 "Test.allTheThings() T-Shirt (Red)", "Sauce Labs Backpack", "Sauce Labs Fleece Jacket"};
 
@@ -58,6 +64,8 @@ public class SwagLabsFilterTest extends BaseTest {
 
     @Test
     public void filterHightoLow() throws InterruptedException {
+        extentTest = reports.startTest("Swag Labs filter High to Low Test");
+
         String[] filteredItems = {"Sauce Labs Fleece Jacket", "Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt", "Test.allTheThings() T-Shirt (Red)",
                 "Sauce Labs Bike Light","Sauce Labs Onesie"};
 
