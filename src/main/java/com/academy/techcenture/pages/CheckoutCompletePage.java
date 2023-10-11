@@ -17,7 +17,6 @@ public class CheckoutCompletePage extends BasePage{
     @FindBy(id = "checkout_complete_container")
     protected WebElement orderConfirmationMessage;
 
-
     public void verifyOrderConfirmation(){
         Assert.assertTrue(orderConfirmationMessage.isDisplayed());
     }
@@ -26,5 +25,4 @@ public class CheckoutCompletePage extends BasePage{
         Assert.assertTrue(backHomeBtn.isEnabled());
         backHomeBtn.click();
     }
-
 }

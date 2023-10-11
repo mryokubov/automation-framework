@@ -23,8 +23,4 @@ public class ConfigReader {
     public static String getProperty(String keyName){
         return properties.getProperty(keyName);
     }
-
-    public static void main(String[] args) {
-        System.out.println(1%5);
-    }
 }

@@ -26,7 +26,6 @@ public class CartPage extends BasePage{
         }
         List<WebElement> products = driver.findElements(By.xpath("//div[@class='cart_item']"));
         Assert.assertEquals(quantity, products.size());
-
     }
 
     public void checkout(){
@@ -38,5 +37,4 @@ public class CartPage extends BasePage{
         Assert.assertTrue(continueShoppingBtn.isEnabled());
         continueShoppingBtn.click();
     }
-
 }

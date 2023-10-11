@@ -33,6 +33,4 @@ public class CheckoutOverviewPage extends BasePage{
         Assert.assertTrue(cancelBtn.isEnabled());
         cancelBtn.click();
     }
-
-
 }

@@ -50,5 +50,4 @@ public class Driver {
             driver = null;
         }
     }
-
 }

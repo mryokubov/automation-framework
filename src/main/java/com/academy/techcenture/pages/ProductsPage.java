@@ -17,7 +17,6 @@ public class ProductsPage extends BasePage{
     @FindBy(className = "product_sort_container")
     protected WebElement filter;
 
-
     public void verifyUserIsOnProductsPage(){
         Assert.assertTrue(secondaryHeader.isDisplayed());
     }

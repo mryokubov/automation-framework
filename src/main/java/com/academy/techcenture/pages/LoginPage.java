@@ -44,7 +44,4 @@ public class LoginPage {
     public void verifyLoginError(){
         Assert.assertTrue(loginError.isDisplayed());
     }
-
-
-
 }
